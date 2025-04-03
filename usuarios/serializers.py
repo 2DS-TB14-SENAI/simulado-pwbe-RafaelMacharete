@@ -1,7 +1,7 @@
-from .models import UsuarioAbs
+from .models import Usuario
 from rest_framework import serializers
 
-class UsuarioAbsSerializer(serializers.ModelSerializer):
+class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
-        model = UsuarioAbs
+        model = Usuario
         fields = ['username', 'password', 'telefone']

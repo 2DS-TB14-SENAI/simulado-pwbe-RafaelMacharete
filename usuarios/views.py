@@ -4,13 +4,13 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
-from .serializers import UsuarioAbsSerializer
-from .models import UsuarioAbs
+from .serializers import UsuarioSerializer
+from .models import Usuario
 
 @api_view(['POST'])
 def criar_usuario(req):
     dados = req.data
-    usuario = UsuarioAbs.objects.create_user(
+    usuario = Usuario.objects.create_user(
         username=dados['username'], 
         password=dados['password'], 
         email=dados['email'],

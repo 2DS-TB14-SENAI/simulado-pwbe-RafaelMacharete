@@ -70,7 +70,7 @@ SIMPLE_JWT = {
     'BLACKLIST_AFTER_ROTATION': True,
 }
 
-AUTH_USER_MODEL = 'usuarios.UsuarioAbs'
+AUTH_USER_MODEL = 'usuarios.Usuario'
 
 
 TEMPLATES = [

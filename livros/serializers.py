@@ -4,4 +4,4 @@ from .models import Livro
 class LivroSerializer(serializers.ModelSerializer):
     class Meta:
         model = Livro
-        fields = ['titulo', 'autor', 'paginas']
+        fields = '__all__'
