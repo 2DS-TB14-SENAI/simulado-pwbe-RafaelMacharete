@@ -13,7 +13,6 @@ def criar_usuario(req):
     usuario = Usuario.objects.create_user(
         username=dados['username'], 
         password=dados['password'], 
-        email=dados['email'],
         telefone=dados['telefone']
         )
 
